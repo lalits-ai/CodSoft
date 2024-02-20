@@ -1,0 +1,79 @@
+#include<iostream>
+#include<iomanip>
+using namespace std;
+
+double add(double n1,double n2)
+{
+  return n1+n2;
+}
+double sub(double n1,double n2)
+{
+  return n1-n2;
+}
+double mul(double n1,double n2)
+{
+  return n1*n2;
+}
+double div(double n1,double n2)
+{
+  return n1/n2;
+}
+double rem(double n1,double n2)
+{
+  return (int)n1 % (int)n2;
+}
+
+int main()
+{
+  double var1,var2;
+  int choice;
+  cout<<setw(30)<<"Calculator"<<endl;
+  while(true)
+  {
+    cout<<"\n1. Addition"<<endl;
+    cout<<"2. Subtraction"<<endl;
+    cout<<"3. Multiplication"<<endl;
+    cout<<"4. Division"<<endl;
+    cout<<"5. Remainder(Modulus)"<<endl;
+    cout<<"6. Exit"<<endl;
+    cout<<"Enter your choice"<<endl;
+    cin>>choice;
+    switch(choice)
+    {
+      case 1: cout<<"Enter number 1: ";
+              cin>>var1;
+              cout<<"Enter number 2: ";
+              cin>>var2;
+              cout<<"\nAdded value: "<<add(var1,var2)<<endl;
+              break;
+      case 2: cout<<"Enter number 1: ";
+              cin>>var1;
+              cout<<"Enter number 2: ";
+              cin>>var2;
+              cout<<"\nSubtracted value: "<<sub(var1,var2)<<endl;
+              break;
+      case 3: cout<<"Enter number 1: ";
+              cin>>var1;
+              cout<<"Enter number 2: ";
+              cin>>var2;
+              cout<<"\nMultiplied value: "<<mul(var1,var2)<<endl;
+              break;
+      case 4: cout<<"Enter number 1: ";
+              cin>>var1;
+              cout<<"Enter number 2: ";
+              cin>>var2;
+              cout<<"\nDivided value: "<<div(var1,var2)<<endl;
+              break;
+      case 5: cout<<"Enter number 1: ";
+              cin>>var1;
+              cout<<"Enter number 2: ";
+              cin>>var2;
+              cout<<"\nRemainder value: "<<rem(var1,var2)<<endl;
+              break;
+      case 6: cout<<"\nCalculator exited!"<<endl;
+              exit(0);
+      default: cout<<"\nInvalid choice"<<endl;
+                break;
+    }
+  }
+}
