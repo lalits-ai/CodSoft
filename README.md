@@ -1,12 +1,7 @@
 # CodSoft
 These are series of tasks that was provided to me to complete as a part of internship.
 The tasks are:
-1. Simple Calculator
-2. Number guessing game
-3. To-do list
-4. Image processing tool
-5. Tic-Tac-Toe game
 
 1. _**Simple Calculator**_: For simple calculator, I implemented basic arithemtic operations such as addition, subtraction, multiplication, division , and remainder. It is a menu driven program, and based on the operation required, it takes two numbers as input from the user performs chosen operation and displays the output. It is put in an infinite loop, so one can perform as many times as it wants. There is also a exit option that is put up, just in case, if one wishes to exit the calculator.
 2. _**Number guessing game**_: For number guessing game, I used <cstdlib> header file as it contains rand() and srand() functions which are used in generating a random number. So the game generates a random number from 1 - 1000(I set the range), and the user is prompted to guess the number. If the guessed number is greater/lesser than the random number, then an hint message will be provided saying that it is higher/lower, however if he/she guesses it correctly, it falls out of the loop throwing an output congratulating the user and asks the user if want to play again. I have also used <time.h> header file for seeding the srand() function as whenever the program is run, it generates a new random number, which is not in the case when only rand() is used. srand() + rand() = new random number(every run of the program); rand() = same random number(every run of the program).
-3. 
+3. _**Tic Tac Toe Game**_: This is simple console based tic tac toe game simulation. The user gets to choose a player between X and O, and get into the game. The board is 3x3 matrix, which asks users to provide the row and column as input to place the respective player's character. The game checks row, column, and diagnol wise everytime a player plays his turn to stop the game and declare the winner(if any). If no match is there and the all the moves are completed(in this case it is 9 moves), the game declares draw and asks user whether to play again or not.
